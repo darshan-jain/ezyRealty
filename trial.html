@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Details</title>
+<style>
+    /* Style for property cards */
+    .property-card {
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+        float: left;
+    }
+
+    .property-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+<!-- Property details will be dynamically added here -->
+<div id="property-details"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Sample array of property data
+    const properties = [
+        {
+            id: 1,
+            title: "Luxury Apartment",
+            description: "Spacious 3-bedroom apartment with stunning views.",
+            price: "$500,000",
+            images: ["image1.jpg", "image2.jpg", "image3.jpg"]
+        },
+        {
+            id: 2,
+            title: "Commercial Building",
+            description: "Prime location commercial building with high foot traffic.",
+            price: "$1,200,000",
+            images: ["image4.jpg", "image5.jpg", "image6.jpg"]
+        }
+    ];
+
+    // Function to render property details
+    function renderPropertyDetails(propertyId) {
+        const property = properties.find(prop => prop.id === propertyId);
+        if (property) {
+            const propertyDetails = document.getElementById("property-details");
+            propertyDetails.innerHTML = `
+                <h2>${property.title}</h2>
+                <p>${property.description}</p>
+                <p>Price: ${property.price}</p>
+                <h3>Additional Images</h3>
+                <div>
+                    ${property.images.map(image => `<img src="${image}" class="property-image" alt="Property Image">`).join("")}
+                </div>
+            `;
+        } else {
+            alert("Property not found!");
+        }
+    }
+
+    // Render property details for property with ID 1 (you can change this to render details for other properties)
+    renderPropertyDetails(1);
+});
+</script>
+</body>
+</html>
