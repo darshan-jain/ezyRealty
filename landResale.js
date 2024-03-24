@@ -1,14 +1,13 @@
 const properties = [
   {id:"01",
-  brand:"SASANA",
+  brand:"Local",
   project:"",
-  location:"Kolappakam",
-  land:"1000",
-  facing: "EAST & WEST",
-  baseRate: "10500",
-  landMark: "CG - Woodside",
-  price: "1 Cr",
-  totalUnitsAvailable: "20",
+  location:"Thirvallur ",
+  land:"2400 Sq ft",
+  facing:"East",
+  price:"55 L",
+  landMark:"From Railway station 4 km",
+  totalUnitsAvailable:"1",
   imageLocation:"",}
 ];
 
@@ -22,7 +21,7 @@ const properties = [
 displayallProperties();
 
 function displayallProperties(){
-  let residentialDisplay = document.querySelector(".land-new");
+  let residentialDisplay = document.querySelector(".land-resale");
   
   let innerHTML = '';
   
@@ -30,7 +29,7 @@ function displayallProperties(){
     innerHTML += `<div class="fp-property">
     <div class="row" style="margin: 20px;">
       <div class="col-sm-6">
-        <img src="assets/general/logoEzyRealty.jpg" alt="propertyimage" style="width: 100%;"> 
+        <img src="assets/general/logoEzyRealty.jpg" style="width: 100%;"> 
       </div>
       <div class="col-sm-6">
         <table class="table table-striped">
@@ -66,16 +65,18 @@ function displayallProperties(){
               <th scope="row">Facing</th>
               <td>${property.facing}</td>
             </tr>
-            <tr>
-              <th scope="row">Base Rate/ sq. ft.</th>
-              <td>${property.baseRate}</td>
-            </tr>       
+             
            
             
             <tr>
               <th scope="row">Total Cost</th>
               <td>${property.price}</td>
             </tr>
+
+            <tr>
+            <th scope="row">Land Mark</th>
+            <td>${property.landMark}</td>
+          </tr>     
            
             <tr>
               <th scope="row">Total Units Available</th>
@@ -86,7 +87,7 @@ function displayallProperties(){
           </tbody>
         </table>
         
-        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=LandNewSale - ${property.project}'});return false;"><button type="button" class="btn btn-dark">Schedule Your Site Visit</button></a>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=LandResale - ${property.project}'});return false;"><button type="button" class="btn btn-dark">Schedule Your Site Visit</button></a>
 
       </div>
 

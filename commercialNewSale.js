@@ -1,15 +1,8 @@
 const properties = [
-  {id:"01",
-  brand:"SASANA",
-  project:"",
-  location:"Kolappakam",
-  land:"1000",
-  facing: "EAST & WEST",
-  baseRate: "10500",
-  landMark: "CG - Woodside",
-  price: "1 Cr",
-  totalUnitsAvailable: "20",
-  imageLocation:"",}
+ 
+
+  
+  
 ];
 
 
@@ -22,10 +15,16 @@ const properties = [
 displayallProperties();
 
 function displayallProperties(){
-  let residentialDisplay = document.querySelector(".land-new");
+  let residentialDisplay = document.querySelector(".commercial-new");
   
   let innerHTML = '';
-  
+
+  if(properties.length == 0)
+  {
+    innerHTML += `<h2 style = "text-align: center; margin: 3%;font-weight: 600;">We'll come back with more<br>amazing properties soon! :) </h2>`;
+
+  }
+  else{
   properties.forEach(property => {
     innerHTML += `<div class="fp-property">
     <div class="row" style="margin: 20px;">
@@ -43,50 +42,59 @@ function displayallProperties(){
           </thead>
           <tbody>
             <tr>
-              <th scope="row">Project</th>
-              <td>${property.project}</td>
-              
-            </tr>
-    
-            <tr>
               <th scope="row">Location</th>
               <td>${property.location}</td>
               
             </tr>
-    
+
             <tr>
-              <th scope="row">Land</th>
-              <td>${property.land}</td>
+            <th scope="row">Structure</th>
+            <td>${property.structure}</td>
+            
+          </tr>
+          <tr>
+          <th scope="row">Size</th>
+          <td>${property.size}</td>
+          
+        </tr>
+
+        <tr>
+              <th scope="row">Total Units Available</th>
+              <td>${property.totalUnitsAvailable}</td>
+            </tr>
+            <tr>
+            <th scope="row">Total Cost (in L)</th>
+            <td>${property.price}</td>
+          </tr>
+            <tr>
+              <th scope="row">Amenities</th>
+              <td>${property.amenities}</td>
               
             </tr>
     
            
           
             <tr>
-              <th scope="row">Facing</th>
-              <td>${property.facing}</td>
+              <th scope="row">Car Parking</th>
+              <td>${property.carParking}</td>
             </tr>
-            <tr>
-              <th scope="row">Base Rate/ sq. ft.</th>
-              <td>${property.baseRate}</td>
-            </tr>       
+             
            
             
+            
+
             <tr>
-              <th scope="row">Total Cost</th>
-              <td>${property.price}</td>
-            </tr>
+            <th scope="row">Status</th>
+            <td>${property.status}</td>
+          </tr>     
            
-            <tr>
-              <th scope="row">Total Units Available</th>
-              <td>${property.totalUnitsAvailable}</td>
-            </tr>
+            
     
             
           </tbody>
         </table>
         
-        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=LandNewSale - ${property.project}'});return false;"><button type="button" class="btn btn-dark">Schedule Your Site Visit</button></a>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=CommercialRental - ${property.location}'});return false;"><button type="button" class="btn btn-dark">Schedule Your Site Visit</button></a>
 
       </div>
 
@@ -101,6 +109,7 @@ function displayallProperties(){
     
     <hr style="margin:2px 10px 2px 10px;">`;
   });
+}
 
   residentialDisplay.innerHTML = innerHTML;
   

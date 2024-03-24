@@ -242,7 +242,7 @@ function displayallProperties(){
     innerHTML += `<div class="fp-property">
     <div class="row" style="margin: 20px;">
       <div class="col-sm-6">
-        <img src="assets/property/residential/resale/${property.id}.png" alt="propertyimage" style="width: 100%;"> 
+        <img src="assets/general/logoEzyRealty.jpg" alt="propertyimage" style="width: 100%;"> 
       </div>
       <div class="col-sm-6">
         <table class="table table-striped">

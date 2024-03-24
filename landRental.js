@@ -1,15 +1,5 @@
 const properties = [
-  {id:"01",
-  brand:"SASANA",
-  project:"",
-  location:"Kolappakam",
-  land:"1000",
-  facing: "EAST & WEST",
-  baseRate: "10500",
-  landMark: "CG - Woodside",
-  price: "1 Cr",
-  totalUnitsAvailable: "20",
-  imageLocation:"",}
+  
 ];
 
 
@@ -22,15 +12,23 @@ const properties = [
 displayallProperties();
 
 function displayallProperties(){
-  let residentialDisplay = document.querySelector(".land-new");
+  let residentialDisplay = document.querySelector(".land-rental");
   
   let innerHTML = '';
-  
+
+  if(properties.length === 0)
+    {
+      innerHTML += `<h2 style = "text-align: center; margin: 3%;font-weight: 600;">We'll come back with more<br>amazing properties soon! :) </h2>`;
+     
+    }
+  else{
   properties.forEach(property => {
+
+
     innerHTML += `<div class="fp-property">
     <div class="row" style="margin: 20px;">
       <div class="col-sm-6">
-        <img src="assets/general/logoEzyRealty.jpg" alt="propertyimage" style="width: 100%;"> 
+        <img src="assets/property/land/newSale/${property.id}.png" alt="propertyimage" style="width: 100%;"> 
       </div>
       <div class="col-sm-6">
         <table class="table table-striped">
@@ -74,7 +72,7 @@ function displayallProperties(){
             
             <tr>
               <th scope="row">Total Cost</th>
-              <td>${property.price}</td>
+              <td>${property.price} (in Cr.)</td>
             </tr>
            
             <tr>
@@ -100,7 +98,9 @@ function displayallProperties(){
     </div>
     
     <hr style="margin:2px 10px 2px 10px;">`;
+  
   });
+}
 
   residentialDisplay.innerHTML = innerHTML;
   
