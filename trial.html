@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Properties</title>
+    <!-- Include any necessary CSS styles -->
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <div id="propertyFilter">
+        <label for="statusFilter">Filter by Status:</label>
+        <select id="statusFilter">
+            <option value="ready">Ready to Move</option>
+            <option value="under-construction">Under Construction</option>
+            <option value="newly-launched">Newly Launched</option>
+        </select>
+    </div>
+
+    <div id="propertyList">
+        <!-- Property listings will be displayed here -->
+    </div>
+
+    <script>
+        // Sample property data
+        const properties = [
+            { id: 1, name: "Property A", location: "Location A", area: "Area A", status: "ready" },
+            { id: 2, name: "Property B", location: "Location B", area: "Area B", status: "under-construction" },
+            { id: 3, name: "Property C", location: "Location C", area: "Area C", status: "newly-launched" },
+            // Add more properties as needed
+        ];
+
+        // Function to filter properties based on status
+        function filterProperties(status) {
+            return properties.filter(property => property.status === status);
+        }
+
+        // Function to render filtered properties on the webpage
+        function renderProperties(propertyList) {
+            const propertyListElement = document.getElementById("propertyList");
+            propertyListElement.innerHTML = ""; // Clear previous listings
+
+            propertyList.forEach(property => {
+                const propertyItem = document.createElement("div");
+                propertyItem.textContent = `${property.name} - ${property.location}, ${property.area}`;
+                propertyListElement.appendChild(propertyItem);
+            });
+        }
+
+        // Event listener for status filter change
+        document.getElementById("statusFilter").addEventListener("change", function() {
+            const selectedStatus = this.value;
+            const filteredProperties = filterProperties(selectedStatus);
+            renderProperties(filteredProperties);
+        });
+
+        // Initial rendering on page load
+        renderProperties(properties);
+    </script>
+</body>
+</html>
