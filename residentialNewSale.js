@@ -691,79 +691,131 @@ function displayNewlyLaunched(){
               
             </tr>
           </thead>
-          <tbody>
+          <tbody>`
+          if(property.project != '')
+            {
+              innerHTML += `
             <tr>
               <th scope="row">Project</th>
               <td>${property.project}</td>
               
-            </tr>
+            </tr>`;
+            }
+
+            if(property.location != '')
+            {
+              innerHTML += `
     
             <tr>
               <th scope="row">Location</th>
               <td>${property.location}</td>
               
-            </tr>
-    
+            </tr>`;
+            }
+
+    if(property.area != '')
+            {
+              innerHTML += `
             <tr>
               <th scope="row">Area</th>
               <td>${property.area}</td>
               
-            </tr>
+            </tr>`;
+            }
+
+            if(property.structure != '')
+            {
+              innerHTML += `
     
             <tr>
               <th scope="row">Structure</th>
               <td>${property.structure}</td>
               
-            </tr>
-    
+            </tr>`;
+            }
+
+            
+        
+        if(property.twobhk != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">2BHK</th>
               <td>${property.twobhk}</td>
               
-            </tr>
-    
+            </tr>`;
+        }
+        if(property.threebhk != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">3BHK</th>
               <td>${property.threebhk}</td>
               
-            </tr>
-    
+            </tr>`;
+        }
+        if(property.fourbhk != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">4BHK</th>
               <td>${property.fourbhk}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.duplex != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Duplex</th>
               <td>${property.duplex}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.pentHouse != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Pent House</th>
               <td>${property.pentHouse}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.facing != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Facing</th>
               <td>${property.facing}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.totalUnitsAvailable != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Total Units Available</th>
               <td>${property.totalUnitsAvailable}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.uds != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">UDS</th>
               <td>${property.uds}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.baserate != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Base Rate per sq ft</th>
               <td>${property.baserate}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.amenities != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Amenities</th>
               <td>${property.amenities}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.handing != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Handing Over</th>
               <td>${property.handing}</td>
-            </tr>
+            </tr>`;
+        }
+        innerHTML += `
            
     
             
@@ -817,79 +869,131 @@ function displayReadyMove(){
               
             </tr>
           </thead>
-          <tbody>
+          <tbody>`
+          if(property.project != '')
+            {
+              innerHTML += `
             <tr>
               <th scope="row">Project</th>
               <td>${property.project}</td>
               
-            </tr>
+            </tr>`;
+            }
+
+            if(property.location != '')
+            {
+              innerHTML += `
     
             <tr>
               <th scope="row">Location</th>
               <td>${property.location}</td>
               
-            </tr>
-    
+            </tr>`;
+            }
+
+    if(property.area != '')
+            {
+              innerHTML += `
             <tr>
               <th scope="row">Area</th>
               <td>${property.area}</td>
               
-            </tr>
+            </tr>`;
+            }
+
+            if(property.structure != '')
+            {
+              innerHTML += `
     
             <tr>
               <th scope="row">Structure</th>
               <td>${property.structure}</td>
               
-            </tr>
-    
+            </tr>`;
+            }
+
+            
+        
+        if(property.twobhk != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">2BHK</th>
               <td>${property.twobhk}</td>
               
-            </tr>
-    
+            </tr>`;
+        }
+        if(property.threebhk != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">3BHK</th>
               <td>${property.threebhk}</td>
               
-            </tr>
-    
+            </tr>`;
+        }
+        if(property.fourbhk != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">4BHK</th>
               <td>${property.fourbhk}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.duplex != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Duplex</th>
               <td>${property.duplex}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.pentHouse != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Pent House</th>
               <td>${property.pentHouse}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.facing != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Facing</th>
               <td>${property.facing}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.totalUnitsAvailable != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Total Units Available</th>
               <td>${property.totalUnitsAvailable}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.uds != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">UDS</th>
               <td>${property.uds}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.baserate != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Base Rate per sq ft</th>
               <td>${property.baserate}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.amenities != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Amenities</th>
               <td>${property.amenities}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.handing != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Handing Over</th>
               <td>${property.handing}</td>
-            </tr>
+            </tr>`;
+        }
+        innerHTML += `
            
     
             
@@ -944,79 +1048,131 @@ function displayUnderConstruction(){
               
             </tr>
           </thead>
-          <tbody>
+          <tbody>`
+          if(property.project != '')
+            {
+              innerHTML += `
             <tr>
               <th scope="row">Project</th>
               <td>${property.project}</td>
               
-            </tr>
+            </tr>`;
+            }
+
+            if(property.location != '')
+            {
+              innerHTML += `
     
             <tr>
               <th scope="row">Location</th>
               <td>${property.location}</td>
               
-            </tr>
-    
+            </tr>`;
+            }
+
+    if(property.area != '')
+            {
+              innerHTML += `
             <tr>
               <th scope="row">Area</th>
               <td>${property.area}</td>
               
-            </tr>
+            </tr>`;
+            }
+
+            if(property.structure != '')
+            {
+              innerHTML += `
     
             <tr>
               <th scope="row">Structure</th>
               <td>${property.structure}</td>
               
-            </tr>
-    
+            </tr>`;
+            }
+
+            
+        
+        if(property.twobhk != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">2BHK</th>
               <td>${property.twobhk}</td>
               
-            </tr>
-    
+            </tr>`;
+        }
+        if(property.threebhk != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">3BHK</th>
               <td>${property.threebhk}</td>
               
-            </tr>
-    
+            </tr>`;
+        }
+        if(property.fourbhk != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">4BHK</th>
               <td>${property.fourbhk}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.duplex != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Duplex</th>
               <td>${property.duplex}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.pentHouse != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Pent House</th>
               <td>${property.pentHouse}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.facing != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Facing</th>
               <td>${property.facing}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.totalUnitsAvailable != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Total Units Available</th>
               <td>${property.totalUnitsAvailable}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.uds != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">UDS</th>
               <td>${property.uds}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.baserate != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Base Rate per sq ft</th>
               <td>${property.baserate}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.amenities != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Amenities</th>
               <td>${property.amenities}</td>
-            </tr>
+            </tr>`;
+        }
+        if(property.handing != ''){
+          innerHTML+=`
             <tr>
               <th scope="row">Handing Over</th>
               <td>${property.handing}</td>
-            </tr>
+            </tr>`;
+        }
+        innerHTML += `
            
     
             
