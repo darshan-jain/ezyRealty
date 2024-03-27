@@ -15,9 +15,7 @@ body{
 }
 .top-bar-phone{
  position: relative;
- top: 25%;
-
-  
+ top: 25%;  
 }
 
 .apnaStyle{
@@ -137,13 +135,14 @@ http://127.0.0.1:5500/assets/general/hero.jpg	font-size: 15px;
 .primarybtn{
 	position:absolute;
 	top: 55%;
-	left: 35px;
+	left: 2vw;
+	
 }
 
 .secondarybtn{
 	position:absolute;
 	top: 55%;
-	left: 220px;
+	left: 15vw;
 	color: black;
 	border-color: none;
 }
@@ -225,27 +224,28 @@ text-align: center;
      
 .slider-images{
   width: 100%;
-	max-width: 400px;
+	max-width: 900px;
   height: 100%;
   animation: scroll 60s linear infinite;
 }
 
 .slide-track {
-  width: 200%;
+ 
   display: flex;
+	width: 300%;
   gap: 7;
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 .slider {
   
   background-color:white;
-  padding: 4em 0em;
+  padding: 5em 0em;
 }
 
 @keyframes scroll {
   0% {transform: translateX(0);}
-  100% {transform: translatex(-800%)}
+  100% {transform: translatex(-1000%)}
 }
  
 
