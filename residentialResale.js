@@ -242,7 +242,7 @@ function displayallProperties(){
     innerHTML += `<div class="fp-property">
     <div class="row" style="margin: 20px;">
       <div class="col-sm-6">
-        <img src="assets/general/logoEzyRealty.jpg" alt="propertyimage" style="width: 100%;"> 
+        <img src="assets/property/residential/resale/${property.id}.png" alt="propertyimage" style="width: 100%;"> 
       </div>
       <div class="col-sm-6">
         <table class="table table-striped">
@@ -254,65 +254,107 @@ function displayallProperties(){
             </tr>
           </thead>
           <tbody>
+          `
+          if(property.project != '')
+          {
+            innerHTML +=`
             <tr>
               <th scope="row">Project</th>
               <td>${property.project}</td>
               
-            </tr>
-    
+            </tr>`;
+          }
+          if(property.location != '')
+          {
+            innerHTML +=`
             <tr>
               <th scope="row">Location</th>
               <td>${property.location}</td>
               
-            </tr>
+            </tr>`;
+          }
+          if(property.structure != '')
+          {
+            innerHTML +=`
     
             <tr>
               <th scope="row">Structure</th>
               <td>${property.structure}</td>
               
-            </tr>
+            </tr>`;
+          }
+          if(property.twobhk != '')
+          {
+            innerHTML +=`
     
             <tr>
               <th scope="row">2BHK</th>
               <td>${property.twobhk}</td>
               
-            </tr>
+            </tr>`;
+          }
+          if(property.threebhk != '')
+          {
+            innerHTML +=`
     
             <tr>
               <th scope="row">3BHK</th>
               <td>${property.threebhk}</td>
               
-            </tr>
+            </tr>`;
+          }
+          if(property.fourbhk != '')
+          {
+            innerHTML +=`
     
             <tr>
               <th scope="row">4BHK</th>
               <td>${property.fourbhk}</td>
-            </tr>
+            </tr>`;
+          }
+          if(property.facing != '')
+          {
+            innerHTML +=`
             <tr>
               <th scope="row">Facing</th>
               <td>${property.facing}</td>
-            </tr>
+            </tr>`;
+          }
+          if(property.uds != '')
+          {
+            innerHTML +=`
            
-            <tr>
-              <th scope="row">Total Units Available</th>
-              <td>${property.totalUnitsAvailable}</td>
-            </tr>
+           
             <tr>
               <th scope="row">UDS</th>
               <td>${property.uds}</td>
-            </tr>
+            </tr>`;
+          }
+          if(property.price != '')
+          {
+            innerHTML +=`
             <tr>
               <th scope="row">Total Cost</th>
               <td>${property.price} (in Cr.)</td>
-            </tr>
+            </tr>`;
+          }
+          if(property.amenities != '')
+          {
+            innerHTML +=`
             <tr>
               <th scope="row">Amenities</th>
               <td>${property.amenities}</td>
-            </tr>
+            </tr>`;
+          }
+          if(property.carPark != '')
+          {
+            innerHTML +=`
             <tr>
               <th scope="row">Car Parking</th>
               <td>${property.carPark}</td>
-            </tr>
+            </tr>`;
+          }
+          innerHTML +=`
            
     
             

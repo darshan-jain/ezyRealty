@@ -70,82 +70,134 @@ function displayallProperties(){
     innerHTML += `<div class="fp-property">
     <div class="row" style="margin: 20px;">
       <div class="col-sm-6">
-        <img src="assets/general/logoEzyRealty.jpg" alt="propertyimage" style="width: 100%;"> 
+        <img src="assets/property/residential/rental/${property.id}.png" alt="propertyimage" style="width: 100%;"> 
       </div>
       <div class="col-sm-6">
         <table class="table table-striped">
-          <thead>
+          <thead>`
+          if(property.brand != '')
+          {
+            innerHTML+=`
             <tr>
               <th scope="col">Brand</th>
               <td scope="col">${property.brand}</td>
               
             </tr>
-          </thead>
+          </thead>`;
+          }
+          if(property.project != '')
+          {
+            innerHTML+=`
           <tbody>
             <tr>
               <th scope="row">Project</th>
               <td>${property.project}</td>
               
-            </tr>
+            </tr>`;
+          }
+
+          if(property.location != '')
+          {
+            innerHTML+=`
     
             <tr>
               <th scope="row">Location</th>
               <td>${property.location}</td>
               
-            </tr>
+            </tr>`;
+          }
+
+          if(property.apvil != '')
+          {
+            innerHTML+=`
     
             <tr>
               <th scope="row">Apartment/ Villa</th>
               <td>${property.apvil}</td>
               
-            </tr>
+            </tr>`;
+          }
+
+          if(property.structure != '')
+          {
+            innerHTML+=`
     
             <tr>
               <th scope="row">Structure</th>
               <td>${property.structure}</td>
               
-            </tr>
+            </tr>`;
+          }
+          if(property.twobhk != '')
+          {
+            innerHTML+=`
     
             <tr>
               <th scope="row">2BHK</th>
               <td>${property.twobhk}</td>
               
-            </tr>
+            </tr>`;
+          }
+          if(property.threebhk != '')
+          {
+            innerHTML+=`
     
             <tr>
               <th scope="row">3BHK</th>
               <td>${property.threebhk}</td>
               
-            </tr>
-    
+            </tr>`;
+          }
+          if(property.fourbhk != '')
+          {
+            innerHTML+=`
             <tr>
               <th scope="row">4BHK</th>
               <td>${property.fourbhk}</td>
-            </tr>
+            </tr>`;
+          }
+          if(property.facing != '')
+          {
+            innerHTML+=`
             <tr>
               <th scope="row">Facing</th>
               <td>${property.facing}</td>
-            </tr>
+            </tr>`;
+          }
+          if(property.furnished != '')
+          {
+            innerHTML+=`
             <tr>
               <th scope="row">Furnished</th>
               <td>${property.furnished}</td>
-            </tr>
-            <tr>
-              <th scope="row">Total Units Available</th>
-              <td>${property.totalUnitsAvailable}</td>
-            </tr>
+            </tr>`;
+          }
+          if(property.uds != '')
+          {
+            innerHTML+=`
+            
             <tr>
               <th scope="row">UDS</th>
               <td>${property.uds}</td>
-            </tr>
+            </tr>`;
+          }
+          if(property.rentMaintenance != '')
+          {
+            innerHTML+=`
             <tr>
               <th scope="row">Rent + Maintenance</th>
               <td>${property.rentMaintenance} (in k)</td>
-            </tr>
+            </tr>`;
+          }
+          if(property.amenities != '')
+          {
+            innerHTML+=`
             <tr>
               <th scope="row">Amenities</th>
               <td>${property.amenities}</td>
-            </tr>
+            </tr>`;
+          }
+          innerHTML += `
            
     
             

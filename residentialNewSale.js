@@ -16,7 +16,7 @@ totalUnitsAvailable:"2/13",
 uds:"311/342/373-735",
 baserate:"10000/10500",
 amenities:"Lift / Car park",
-handing:"45809",
+handing:"June 2025",
 status:"Newly Launched",
 
   },
@@ -37,7 +37,7 @@ status:"Newly Launched",
     uds:"",
     baserate:"",
     amenities:"",
-    handing:"45901",
+    handing:"September 2025",
     status:"Newly Launched",
 
   },
@@ -81,26 +81,24 @@ status:"Newly Launched",
   handing:"45901",
   status:"Newly Launched",},
 
-  {
-    id:"05",
-brand:"Excel construction co",
-project:"Mathura Apartment",
-location:"Virgambakkam ",
-area:"Barathi Dasan St, Baskar Colony",
+  {id:"07",
+brand:"Reno Foundation",
+project:"Daiva Sadanam",
+location:"Anna Nagar West ",
+area:"I Block - 7th St - Vallalar Colony",
 structure:"Stilt +3",
-twobhk:"1066",
-threebhk:"1243",
+twobhk:"",
+threebhk:"1335",
 fourbhk:"",
 duplex:"",
 pentHouse:"",
-facing:"South & North",
-totalUnitsAvailable:"",
-uds:"",
-baserate:"10500",
+facing:"North & South",
+totalUnitsAvailable:"4",
+uds:"580",
+baserate:"16000",
 amenities:"LIFT / CAR PARK",
-handing:"Sept 2024",
-status:"Under Construction",
-  },
+handing:"Jan 2025",
+status:"Under Construction",},
 
 {id:"06",
 brand:"KG HOMES",
@@ -121,25 +119,6 @@ amenities:"LIFT / CAR PARK",
 handing:"Sept 2024",
 status:"Under Construction",
 },
-
-{id:"07",
-brand:"Reno Foundation",
-project:"Daiva Sadanam",
-location:"Anna Nagae West ",
-area:"I Block - 7th St - Vallalar Colony",
-structure:"Stilt +3",
-twobhk:"",
-threebhk:"1335",
-fourbhk:"",
-duplex:"",
-pentHouse:"",
-facing:"North & South",
-totalUnitsAvailable:"4",
-uds:"580",
-baserate:"16000",
-amenities:"LIFT / CAR PARK",
-handing:"Jan 2025",
-status:"Under Construction",},
 
 {id:"08",
 brand:"Traventures",
@@ -198,26 +177,6 @@ amenities:"LIFT / CAR PARK",
 handing:"",
 status:"Under Construction",},
 
-{id:"11",
-brand:"Pushkar Properties",
-project:"KALPATARU",
-location:"KORATTUR",
-area:"EAST AVENUE ROAD",
-structure:"stilt+5",
-twobhk:"",
-threebhk:"1550",
-fourbhk:"",
-duplex:"",
-pentHouse:"",
-facing:"East & North",
-totalUnitsAvailable:"7",
-uds:"699",
-baserate:"11000",
-amenities:"LIFT / CAR PARK",
-handing:"",
-status:"Under Construction",},
-
-
 {id:"12",
 brand:"Indus Alliance Foundation",
 project:"Avista",
@@ -255,6 +214,70 @@ baserate:"18000",
 amenities:"LIFT / CAR PARK",
 handing:"December 2024",
 status:"Under Construction",},
+
+{id:"18",
+brand:"AKULA",
+project:"Dwaraka",
+location:"Alwarpet",
+area:"Venus Colony",
+structure:"stilt+5",
+twobhk:"",
+threebhk:"1875",
+fourbhk:"2243",
+duplex:"",
+pentHouse:"",
+facing:"",
+totalUnitsAvailable:"",
+uds:"",
+baserate:"",
+amenities:"LIFT / CAR PARK",
+handing:"",
+status:"Under Construction",},
+
+  {
+    id:"05",
+brand:"Excel construction co",
+project:"Mathura Apartment",
+location:"Virgambakkam ",
+area:"Barathi Dasan St, Baskar Colony",
+structure:"Stilt +3",
+twobhk:"1066",
+threebhk:"1243",
+fourbhk:"",
+duplex:"",
+pentHouse:"",
+facing:"South & North",
+totalUnitsAvailable:"",
+uds:"",
+baserate:"10500",
+amenities:"LIFT / CAR PARK",
+handing:"Sept 2024",
+status:"Under Construction",
+  },
+
+{id:"11",
+brand:"Pushkar Properties",
+project:"KALPATARU",
+location:"KORATTUR",
+area:"EAST AVENUE ROAD",
+structure:"stilt+5",
+twobhk:"",
+threebhk:"1550",
+fourbhk:"",
+duplex:"",
+pentHouse:"",
+facing:"East & North",
+totalUnitsAvailable:"7",
+uds:"699",
+baserate:"11000",
+amenities:"LIFT / CAR PARK",
+handing:"",
+status:"Under Construction",},
+
+
+
+
+
 
 {id:"14",
 brand:"Pushkar Properties",
@@ -332,24 +355,7 @@ amenities:"",
 handing:"",
 status:"Under Construction",},
 
-{id:"18",
-brand:"AKULA",
-project:"Dwaraka",
-location:"Alwarpet",
-area:"Venus Colony",
-structure:"stilt+5",
-twobhk:"",
-threebhk:"1875",
-fourbhk:"2243",
-duplex:"",
-pentHouse:"",
-facing:"",
-totalUnitsAvailable:"",
-uds:"",
-baserate:"",
-amenities:"LIFT / CAR PARK",
-handing:"",
-status:"Under Construction",},
+
 
 {id:"19",
 brand:"Pushkar Properties",
@@ -446,6 +452,63 @@ amenities:"LIFT / CAR PARK",
 handing:"Ready to move in",
 status:"Ready To Move In",},
 
+{id:"27",
+brand:"TVH",
+project:"Nivhaan",
+location:"Saligramam",
+area:"Near Arcot Road",
+structure:"Stilt + 4",
+twobhk:"1183 / 1201 ",
+threebhk:"",
+fourbhk:"",
+duplex:"",
+pentHouse:"",
+facing:"East & South",
+totalUnitsAvailable:"12",
+uds:"",
+baserate:"10500",
+amenities:"LIFT / CAR PARK",
+handing:"Ready to move in",
+status:"Ready To Move In",},
+
+{id:"28",
+brand:"LEGENDARY",
+project:"PLATINA",
+location:"Gopalapuram",
+area:"loyds road-gowdia mutt road corner",
+structure:"stilt+5",
+twobhk:"",
+threebhk:"",
+fourbhk:"2691",
+duplex:"",
+pentHouse:"",
+facing:"North & South",
+totalUnitsAvailable:"8",
+uds:"925",
+baserate:"17500",
+amenities:"LIFT / CAR PARK",
+handing:"Ready to Move in",
+status:"Ready To Move In",},
+
+{id:"29",
+brand:"SAN Breeze",
+project:"San Breeze",
+location:"Saligramam",
+area:"Bharathyaar St",
+structure:"Stilt +3",
+twobhk:"869",
+threebhk:"",
+fourbhk:"",
+duplex:"",
+pentHouse:"",
+facing:"North",
+totalUnitsAvailable:"2",
+uds:"",
+baserate:"10000",
+amenities:"LIFT / CAR PARK",
+handing:"March 2024",
+status:"Ready To Move In",},
+
 {id:"24",
 brand:"NPSH Developers",
 project:"Nandika ",
@@ -503,62 +566,9 @@ amenities:"LIFT / CAR PARK",
 handing:"Ready to move in",
 status:"Ready To Move In",},
 
-{id:"27",
-brand:"TVH",
-project:"Nivhaan",
-location:"Saligramam",
-area:"Near Arcot Road",
-structure:"Stilt + 4",
-twobhk:"1183 / 1201 ",
-threebhk:"",
-fourbhk:"",
-duplex:"",
-pentHouse:"",
-facing:"East & South",
-totalUnitsAvailable:"12",
-uds:"",
-baserate:"10500",
-amenities:"LIFT / CAR PARK",
-handing:"Ready to move in",
-status:"Ready To Move In",},
 
-{id:"28",
-brand:"LEGENDARY",
-project:"PLATINA",
-location:"Gopalapuram",
-area:"loyds road-gowdia mutt road corner",
-structure:"stilt+5",
-twobhk:"",
-threebhk:"",
-fourbhk:"2691",
-duplex:"",
-pentHouse:"",
-facing:"North & South",
-totalUnitsAvailable:"8",
-uds:"925",
-baserate:"17500",
-amenities:"LIFT / CAR PARK",
-handing:"Ready to Move in",
-status:"Ready To Move In",},
 
-{id:"29",
-brand:"SAN Breeze",
-project:"San Breeze",
-location:"Saligramam",
-area:"Bharathyaar St",
-structure:"Stilt +3",
-twobhk:"869",
-threebhk:"",
-fourbhk:"",
-duplex:"",
-pentHouse:"",
-facing:"North",
-totalUnitsAvailable:"2",
-uds:"",
-baserate:"10000",
-amenities:"LIFT / CAR PARK",
-handing:"March 2024",
-status:"Ready To Move In",},
+
 
 {
   id:"34",
@@ -780,13 +790,7 @@ function displayNewlyLaunched(){
               <td>${property.facing}</td>
             </tr>`;
         }
-        if(property.totalUnitsAvailable != ''){
-          innerHTML+=`
-            <tr>
-              <th scope="row">Total Units Available</th>
-              <td>${property.totalUnitsAvailable}</td>
-            </tr>`;
-        }
+        
         if(property.uds != ''){
           innerHTML+=`
             <tr>
@@ -958,13 +962,7 @@ function displayReadyMove(){
               <td>${property.facing}</td>
             </tr>`;
         }
-        if(property.totalUnitsAvailable != ''){
-          innerHTML+=`
-            <tr>
-              <th scope="row">Total Units Available</th>
-              <td>${property.totalUnitsAvailable}</td>
-            </tr>`;
-        }
+       
         if(property.uds != ''){
           innerHTML+=`
             <tr>
@@ -1137,13 +1135,7 @@ function displayUnderConstruction(){
               <td>${property.facing}</td>
             </tr>`;
         }
-        if(property.totalUnitsAvailable != ''){
-          innerHTML+=`
-            <tr>
-              <th scope="row">Total Units Available</th>
-              <td>${property.totalUnitsAvailable}</td>
-            </tr>`;
-        }
+        
         if(property.uds != ''){
           innerHTML+=`
             <tr>

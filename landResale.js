@@ -78,12 +78,7 @@ function displayallProperties(){
             <td>${property.landMark}</td>
           </tr>     
            
-            <tr>
-              <th scope="row">Total Units Available</th>
-              <td>${property.totalUnitsAvailable}</td>
-            </tr>
-    
-            
+           
           </tbody>
         </table>
         

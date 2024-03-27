@@ -74,64 +74,84 @@ function displayallProperties(){
     innerHTML += `<div class="fp-property">
     <div class="row" style="margin: 20px;">
       <div class="col-sm-6">
-        <img src="assets/general/logoEzyRealty.jpg" alt="propertyimage" style="width: 100%;"> 
+        <img src="assets/property/commercial/rental/${property.id}.png" alt="propertyimage" style="width: 100%;"> 
       </div>
       <div class="col-sm-6">
         <table class="table table-striped">
           <thead>
+        
             <tr>
               <th scope="col">Brand</th>
               <td scope="col">${property.brand}</td>
               
             </tr>
+          
+
           </thead>
-          <tbody>
+          <tbody>`
+
+            if(property.location != '')
+          {
+            innerHTML +=`
             <tr>
               <th scope="row">Location</th>
               <td>${property.location}</td>
               
-            </tr>
-
+            </tr>`;
+          }
+          if(property.structure != '')
+          {
+            innerHTML +=`
             <tr>
             <th scope="row">Structure</th>
             <td>${property.structure}</td>
             
-          </tr>
+          </tr>`;
+          }
+          if(property.size != '')
+          {
+            innerHTML +=`
           <tr>
           <th scope="row">Size</th>
           <td>${property.size}</td>
           
-        </tr>
-
-        <tr>
-              <th scope="row">Total Units Available</th>
-              <td>${property.totalUnitsAvailable}</td>
-            </tr>
+        </tr>`;
+          }
+          if(property.price != '')
+          {
+            innerHTML +=`
             <tr>
             <th scope="row">Total Cost (in L)</th>
             <td>${property.price}</td>
-          </tr>
+          </tr>`;
+          }
+          if(property.amenities != '')
+          {
+            innerHTML +=`
             <tr>
               <th scope="row">Amenities</th>
               <td>${property.amenities}</td>
               
-            </tr>
-    
-           
-          
+            </tr>`;
+          }
+
+          if(property.carParking != '')
+          {
+            innerHTML +=`
             <tr>
               <th scope="row">Car Parking</th>
               <td>${property.carParking}</td>
-            </tr>
-             
-           
-            
-            
-
+            </tr>`;
+          }
+          if(property.status != '')
+          {
+            innerHTML +=`
             <tr>
             <th scope="row">Status</th>
             <td>${property.status}</td>
-          </tr>     
+          </tr>  `;
+          }
+          innerHTML += `   
            
             
     

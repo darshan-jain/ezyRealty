@@ -75,10 +75,7 @@ function displayallProperties(){
               <td>${property.price} (in Cr.)</td>
             </tr>
            
-            <tr>
-              <th scope="row">Total Units Available</th>
-              <td>${property.totalUnitsAvailable}</td>
-            </tr>
+           
     
             
           </tbody>

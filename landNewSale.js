@@ -41,52 +41,73 @@ function displayallProperties(){
               
             </tr>
           </thead>
-          <tbody>
+          <tbody>`
+          if(property.project != '')
+          {
+            innerHTML +=`
             <tr>
               <th scope="row">Project</th>
               <td>${property.project}</td>
               
-            </tr>
-    
+            </tr>`;
+          }
+
+    if(property.location != '')
+          {
+            innerHTML +=`
             <tr>
               <th scope="row">Location</th>
               <td>${property.location}</td>
               
-            </tr>
+            </tr>`;
+          }
+          if(property.land != '')
+          {
+            innerHTML +=`
     
             <tr>
               <th scope="row">Land</th>
               <td>${property.land}</td>
               
-            </tr>
+            </tr>`;
+          }
+          if(property.facing != '')
+          {
+            innerHTML +=`
     
            
           
             <tr>
               <th scope="row">Facing</th>
               <td>${property.facing}</td>
-            </tr>
+            </tr>`;
+          }
+          if(property.baseRate != '')
+          {
+            innerHTML +=`
+
             <tr>
               <th scope="row">Base Rate/ sq. ft.</th>
               <td>${property.baseRate}</td>
-            </tr>       
+            </tr>   `;
+          }
+          if(property.price != '')
+          {
+            innerHTML +=`
+
            
             
             <tr>
               <th scope="row">Total Cost</th>
               <td>${property.price}</td>
-            </tr>
-           
-            <tr>
-              <th scope="row">Total Units Available</th>
-              <td>${property.totalUnitsAvailable}</td>
-            </tr>
-    
+            </tr>`;
+          }
+          innerHTML += `
             
           </tbody>
         </table>
         
-        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=LandNewSale - ${property.project}'});return false;"><button type="button" class="btn btn-dark">Schedule Your Site Visit</button></a>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=LandNewSale - ${property.location}'});return false;"><button type="button" class="btn btn-dark">Schedule Your Site Visit</button></a>
 
       </div>
 
