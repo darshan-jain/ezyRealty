@@ -10,6 +10,9 @@ const properties = [
   price: "1 Cr",
   totalUnitsAvailable: "20",
   imageLocation:"",}
+  
+    
+     
 ];
 
 
@@ -24,105 +27,33 @@ displayallProperties();
 function displayallProperties(){
   let residentialDisplay = document.querySelector(".land-new");
   
-  let innerHTML = '';
+  let innerHTML = '<div class="row">';
   
   properties.forEach(property => {
-    innerHTML += `<div class="fp-property">
-    <div class="row" style="margin: 20px;">
-      <div class="col-sm-6">
-        <img src="assets/general/logoEzyRealty.jpg" alt="propertyimage" style="width: 100%;"> 
-      </div>
-      <div class="col-sm-6">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Brand</th>
-              <td scope="col">${property.brand}</td>
-              
-            </tr>
-          </thead>
-          <tbody>`
-          if(property.project != '')
-          {
-            innerHTML +=`
-            <tr>
-              <th scope="row">Project</th>
-              <td>${property.project}</td>
-              
-            </tr>`;
-          }
-
-    if(property.location != '')
-          {
-            innerHTML +=`
-            <tr>
-              <th scope="row">Location</th>
-              <td>${property.location}</td>
-              
-            </tr>`;
-          }
-          if(property.land != '')
-          {
-            innerHTML +=`
+    innerHTML += `
     
-            <tr>
-              <th scope="row">Land</th>
-              <td>${property.land}</td>
-              
-            </tr>`;
-          }
-          if(property.facing != '')
-          {
-            innerHTML +=`
-    
-           
-          
-            <tr>
-              <th scope="row">Facing</th>
-              <td>${property.facing}</td>
-            </tr>`;
-          }
-          if(property.baseRate != '')
-          {
-            innerHTML +=`
-
-            <tr>
-              <th scope="row">Base Rate/ sq. ft.</th>
-              <td>${property.baseRate}</td>
-            </tr>   `;
-          }
-          if(property.price != '')
-          {
-            innerHTML +=`
-
-           
-            
-            <tr>
-              <th scope="row">Total Cost</th>
-              <td>${property.price}</td>
-            </tr>`;
-          }
-          innerHTML += `
-            
-          </tbody>
-        </table>
+    <div class="col-sm-12 col-md-8 col-lg-8 mb-4">
+            <div class="card" style="width: 100%; margin: auto;">
+                <img src="assets/general/hd3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title"> ${property.brand} - 📍 ${property.location}</h4>
+                    <h6 class="card-text">${property.land} sq. ft. | ${property.facing} Facing</h6>
+                    <p class="card-text">Landmark: ${property.landMark}</p>
+                    <h6 class="card-text">Starting from Rs. ${property.price}</h6>
+                    <div class="buttonsprop" style="display: flex; justify-content: space-between;">
+                        <a href="https://wa.me/919176133166?text=Hi%20I%20was%20browsing%20your%20website%20and%20I%20am%20Interested%20in%20LandResale%20-%20${property.location}%20.%20Please%20send%20more%20details."  target="_blank" class="btn btn-success" style="margin: 1%;">Enquire on Whatsapp</a>
+                        <a href="#" class="btn btn-outline-secondary" style="margin: 1%;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=LandNewSale - ${property.location}'});return false;">Schedule Your Site Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       `
         
-        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=LandNewSale - ${property.location}'});return false;"><button type="button" class="btn btn-dark">Schedule Your Site Visit</button></a>
-
-      </div>
-
-     
-
-
-
-
-    </div>
-    
-    </div>
-    
-    <hr style="margin:2px 10px 2px 10px;">`;
   });
 
+  innerHTML += `
+            
+   </div>`;
   residentialDisplay.innerHTML = innerHTML;
   
   
