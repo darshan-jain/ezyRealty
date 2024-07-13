@@ -41,7 +41,7 @@ const properties = [
   facing:"South",
   totalUnitsAvailable:"1",
   uds:"764",
-  price:"1.9 Cr",
+  price:"1.9",
   amenities:"Lift & Car park",
   carPark:"2",
   imageLocation:"",},
@@ -57,7 +57,7 @@ const properties = [
   facing:"East",
   totalUnitsAvailable:"1",
   uds:"1000",
-  price:"3.1 Cr",
+  price:"3.1",
   amenities:"Lift & Car park",
   carPark:"2",
   imageLocation:"",},
@@ -236,152 +236,59 @@ displayallProperties();
 function displayallProperties(){
   let residentialDisplay = document.querySelector(".residential-resale");
   
-  let innerHTML = '';
+  let innerHTML = '<div class="row">';
   
   properties.forEach(property => {
-    innerHTML += `<div class="fp-property">
-    <div class="row" style="margin: 20px;">
-      <div class="col-sm-6">
-        <img src="assets/property/residential/resale/${property.id}.png" alt="propertyimage" style="width: 100%;"> 
-      </div>
-      <div class="col-sm-6">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Brand</th>
-              <td scope="col">${property.brand}</td>
-              
-            </tr>
-          </thead>
-          <tbody>
-          `
-          if(property.project != '')
-          {
-            innerHTML +=`
-            <tr>
-              <th scope="row">Project</th>
-              <td>${property.project}</td>
-              
-            </tr>`;
-          }
-          if(property.location != '')
-          {
-            innerHTML +=`
-            <tr>
-              <th scope="row">Location</th>
-              <td>${property.location}</td>
-              
-            </tr>`;
-          }
-          if(property.structure != '')
-          {
-            innerHTML +=`
+    innerHTML += `
     
-            <tr>
-              <th scope="row">Structure</th>
-              <td>${property.structure}</td>
-              
-            </tr>`;
-          }
-          if(property.twobhk != '')
-          {
-            innerHTML +=`
-    
-            <tr>
-              <th scope="row">2BHK</th>
-              <td>${property.twobhk}</td>
-              
-            </tr>`;
-          }
-          if(property.threebhk != '')
-          {
-            innerHTML +=`
-    
-            <tr>
-              <th scope="row">3BHK</th>
-              <td>${property.threebhk}</td>
-              
-            </tr>`;
-          }
-          if(property.fourbhk != '')
-          {
-            innerHTML +=`
-    
-            <tr>
-              <th scope="row">4BHK</th>
-              <td>${property.fourbhk}</td>
-            </tr>`;
-          }
-          if(property.facing != '')
-          {
-            innerHTML +=`
-            <tr>
-              <th scope="row">Facing</th>
-              <td>${property.facing}</td>
-            </tr>`;
-          }
-          if(property.uds != '')
-          {
-            innerHTML +=`
-           
-           
-            <tr>
-              <th scope="row">UDS</th>
-              <td>${property.uds}</td>
-            </tr>`;
-          }
-          if(property.price != '')
-          {
-            innerHTML +=`
-            <tr>
-              <th scope="row">Total Cost</th>
-              <td>${property.price} (in Cr.)</td>
-            </tr>`;
-          }
-          if(property.amenities != '')
-          {
-            innerHTML +=`
-            <tr>
-              <th scope="row">Amenities</th>
-              <td>${property.amenities}</td>
-            </tr>`;
-          }
-          if(property.carPark != '')
-          {
-            innerHTML +=`
-            <tr>
-              <th scope="row">Car Parking</th>
-              <td>${property.carPark}</td>
-            </tr>`;
-          }
-          innerHTML +=`
-           
-    
-            
-          </tbody>
-        </table>
+    <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+            <div class="card" style="width: 100%; margin: auto;">
+                <img src="assets/property/residential/resale/${property.id}.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title"> ${property.brand}:${property.project} - 📍 ${property.location}</h4>
+                    <h6 class="card-text">${property.structure} | 
+                    `;
+                    
+                    if(property.twobhk != '')
+                      {
+                        innerHTML+=`
+                    
+                    2BHK - ${property.twobhk} sq. ft.`;
+                       }
+                       if(property.threebhk != '')
+                        {
+                          innerHTML+=`
+                      
+                      3BHK - ${property.threebhk} sq. ft.`;
+                         }
+                         if(property.fourbhk != '')
+                          {
+                            innerHTML+=`
+                        
+                        4BHK - ${property.fourbhk} sq. ft.`;
+                           }
+                           innerHTML+=`
+                        </h6>
+                    <p class="card-text">Amenities: ${property.amenities}</p>
+                    <p class="card-text">UDS: ${property.uds} | Car Parking: ${property.carPark}</p>
+                    <h6 class="card-text">Starting from Rs. ${property.price} Cr</h6>
+                    <div class="buttonsprop" style="display: flex; justify-content: space-between;">
+                        <a href="https://wa.me/919176133166?text=Hi%20I%20was%20browsing%20your%20website%20and%20I%20am%20Interested%20in%20ResidentialResale%20-%20${property.location}%20.%20Please%20send%20more%20details."  target="_blank" class="btn btn-success" style="margin: 1%;">Enquire on Whatsapp</a>
+                        <a href="#" class="btn btn-outline-secondary" style="margin: 1%;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=ResidentialResale - ${property.location}'});return false;">Schedule Your Site Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       `
         
-        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=ResidentialResale - ${property.project}'});return false;"><button type="button" class="btn btn-dark">Schedule Your Site Visit</button></a>
-
-      </div>
-
-     
-
-
-
-
-    </div>
-    
-    </div>
-    
-    <hr style="margin:2px 10px 2px 10px;">`;
   });
 
+  innerHTML += `
+            
+   </div>`;
   residentialDisplay.innerHTML = innerHTML;
   
   
 }
-
-
 
 
