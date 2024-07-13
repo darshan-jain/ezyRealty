@@ -101,8 +101,8 @@ function displayallProperties(){
                     <p class="card-text">UDS: ${property.uds} | Car Parking: ${property.carPark} | Facing: ${property.facing}</p>
                     <h6 class="card-text">Starting from Rs. ${property.rentMaintenance} (in k)</h6>
                     <div class="buttonsprop" style="display: flex; justify-content: space-between;">
-                        <a href="https://wa.me/919176133166?text=Hi%20I%20was%20browsing%20your%20website%20and%20I%20am%20Interested%20in%20ResidentialResale%20-%20${property.location}%20.%20Please%20send%20more%20details."  target="_blank" class="btn btn-success" style="margin: 1%;">Enquire on Whatsapp</a>
-                        <a href="#" class="btn btn-outline-secondary" style="margin: 1%;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=ResidentialResale - ${property.location}'});return false;">Schedule Your Site Visit</a>
+                        <a href="https://wa.me/919176133166?text=Hi%20I%20was%20browsing%20your%20website%20and%20I%20am%20Interested%20in%20ResidentialRental%20-%20${property.location}%20.%20Please%20send%20more%20details."  target="_blank" class="btn btn-success" style="margin: 1%;">Enquire on Whatsapp</a>
+                        <a href="#" class="btn btn-outline-secondary" style="margin: 1%;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=ResidentialRental - ${property.location}'});return false;">Schedule Your Site Visit</a>
                     </div>
                 </div>
             </div>
