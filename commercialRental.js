@@ -68,113 +68,34 @@ displayallProperties();
 function displayallProperties(){
   let residentialDisplay = document.querySelector(".commercial-rental");
   
-  let innerHTML = '';
+  let innerHTML = '<div class="row">';
   
   properties.forEach(property => {
-    innerHTML += `<div class="fp-property">
-    <div class="row" style="margin: 20px;">
-      <div class="col-sm-6">
-        <img src="assets/property/commercial/rental/${property.id}.png" alt="propertyimage" style="width: 100%;"> 
-      </div>
-      <div class="col-sm-6">
-        <table class="table table-striped">
-          <thead>
+    innerHTML += `
+    
+    <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+            <div class="card" style="width: 100%; margin: auto;">
+                <img src="assets/property/commercial/rental/${property.id}.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title"> ${property.brand} - 📍 ${property.location}</h4>
+                    <h6 class="card-text">${property.structure}| ${property.size} sq. ft.</h6>
+                    <p class="card-text">Amenities: ${property.amenities}</p>
+                    <p class="card-text">Status: ${property.status}</p>
+                    <h6 class="card-text">Starting from Rs. ${property.price} Lakhs</h6>
+                    <div class="buttonsprop" style="display: flex; justify-content: space-between;">
+                        <a href="https://wa.me/919176133166?text=Hi%20I%20was%20browsing%20your%20website%20and%20I%20am%20Interested%20in%20CommercialRental%20-%20${property.location}%20.%20Please%20send%20more%20details."  target="_blank" class="btn btn-success" style="margin: 1%;">Enquire on Whatsapp</a>
+                        <a href="#" class="btn btn-outline-secondary" style="margin: 1%;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=CommercialRental - ${property.location}'});return false;">Schedule Your Site Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       `
         
-            <tr>
-              <th scope="col">Brand</th>
-              <td scope="col">${property.brand}</td>
-              
-            </tr>
-          
-
-          </thead>
-          <tbody>`
-
-            if(property.location != '')
-          {
-            innerHTML +=`
-            <tr>
-              <th scope="row">Location</th>
-              <td>${property.location}</td>
-              
-            </tr>`;
-          }
-          if(property.structure != '')
-          {
-            innerHTML +=`
-            <tr>
-            <th scope="row">Structure</th>
-            <td>${property.structure}</td>
-            
-          </tr>`;
-          }
-          if(property.size != '')
-          {
-            innerHTML +=`
-          <tr>
-          <th scope="row">Size</th>
-          <td>${property.size}</td>
-          
-        </tr>`;
-          }
-          if(property.price != '')
-          {
-            innerHTML +=`
-            <tr>
-            <th scope="row">Total Cost (in L)</th>
-            <td>${property.price}</td>
-          </tr>`;
-          }
-          if(property.amenities != '')
-          {
-            innerHTML +=`
-            <tr>
-              <th scope="row">Amenities</th>
-              <td>${property.amenities}</td>
-              
-            </tr>`;
-          }
-
-          if(property.carParking != '')
-          {
-            innerHTML +=`
-            <tr>
-              <th scope="row">Car Parking</th>
-              <td>${property.carParking}</td>
-            </tr>`;
-          }
-          if(property.status != '')
-          {
-            innerHTML +=`
-            <tr>
-            <th scope="row">Status</th>
-            <td>${property.status}</td>
-          </tr>  `;
-          }
-          innerHTML += `   
-           
-            
-    
-            
-          </tbody>
-        </table>
-        
-        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ezyrealty/schedule-your-site-visit?a2=CommercialRental - ${property.location}'});return false;"><button type="button" class="btn btn-dark">Schedule Your Site Visit</button></a>
-
-      </div>
-
-     
-
-
-
-
-    </div>
-    
-    </div>
-    
-    <hr style="margin:2px 10px 2px 10px;">`;
   });
 
+  innerHTML += `
+            
+   </div>`;
   residentialDisplay.innerHTML = innerHTML;
   
   
